@@ -1,0 +1,163 @@
+/* {background: rgba(0,0,0,.125);} */
+html, body {font-family: "Open Sans", Helvetica; color:#4a4a4a;}
+
+.active {background: #d8d8d8;}
+/********************************************
+               H E A D E R
+********************************************/
+header {height: 64px; padding: 0 24px;}
+header, nav, footer {display:flex; justify-content: space-between; align-items: center;}
+nav.logo {font-weight: bold;}
+nav.logo span {margin: 0;}
+nav span {font-weight: normal;  margin: 0 8px;}
+
+header img {margin-right: 10px;}
+header.mobile-header{display:none;}
+
+@media only screen and (max-width: 1024px){
+}
+@media only screen and (max-width: 780px){
+      header {display: none;}
+      header.mobile-header{display:flex; justify-content: center; align-items: center; padding: 0;}
+      header.mobile-header nav {display:flex; justify-content: space-around; align-items: center; margin: 0 auto; width: 100%; }
+}
+
+/********************************************
+               B A N N E R
+********************************************/
+section.banner {background-color: #dbdbdb; display:flex; justify-content: space-between; align-items: center;}
+section.banner img {width: 60%; height: auto; margin: 32px 24px;}
+
+section.banner .banner-description {margin: 24px; line-height: 3em; padding-right: 5%;}
+section.banner .banner-description h1 {font-size: 2.5em; font-weight:bold;}
+section.banner .banner-description p {font-size: 1.3em; font-weight: 600; line-height: 1.5em; margin: 30px 0;}
+section.banner .banner-description .banner-button {background-color: #4a4a4a; color:white; text-align: center;}
+
+
+@media only screen and (max-width: 1024px){
+}
+@media only screen and (max-width: 780px){
+       section.banner {flex-direction: column;}
+       section.banner img {width: 100%; margin:0;}
+
+       section.banner .banner-description {padding:0; margin:0; width:80%; text-align:center;}
+       section.banner .banner-description .main-button {width: 80%; margin:0 auto;}
+       section.banner .banner-description h1 {margin: 32px 16px;}
+       section.banner .banner-description p {margin: 24px 16px;}
+       section.banner .banner-description .banner-button {margin-bottom: 32px; background:#9b9b9b;}
+}
+
+/********************************************
+      C A M P U S - S H O W C A S E
+********************************************/
+section.campus-showcase {display:flex; width: 100%; background: #f3f5f5;}
+
+section.campus-showcase .main-column {width: 60%; display:flex; flex-direction: column; justify-content: center; align-items: center; padding: 32px 24px;}
+section.campus-showcase .main-column h1 {font-size: 1.85em; font-weight: bold; margin: 10px 0; align-self: flex-start;}
+section.campus-showcase .main-column p {margin: 24px 0;}
+section.campus-showcase .main-column span {margin: 24px 0; align-self: flex-start;}
+section.campus-showcase .main-column img {width: 100%; height: auto;}
+
+section.campus-showcase .secondary-column {width: 40%; display:flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 1em 0 1em 0;}
+section.campus-showcase .secondary-column {font-weight: 100; font-size: .9em;}
+section.campus-showcase .secondary-column h3 {font-size: 1.2em; font-weight: normal;}
+section.campus-showcase .secondary-column a{color:#5399e5; text-decoration: none; font-size: .8em;}
+
+section.campus-showcase .secondary-column article {display:flex; justify-content: center; align-items: center; width: 100%; flex-direction: row; margin:1.7em auto;}
+section.campus-showcase .secondary-column article .caption {width: 65%; line-height: 1.7em;}
+section.campus-showcase .secondary-column article .img {width: 180px; height: 11em; margin-right: 15px; background-position: center; background-size: cover;}
+
+section.campus-showcase .orientation{background-image: url("resources/images/information-orientation.jpg");}
+section.campus-showcase .lecture{background-image: url("resources/images/information-guest-lecture.jpg");}
+section.campus-showcase .campus{background-image: url("resources/images/information-campus.jpg");}
+
+
+@media only screen and (max-width: 780px){
+      section.campus-showcase .main-column {display:none;}
+      section.campus-showcase .secondary-column{
+        width: inherit; display:flex; flex-direction: column; justify-content: flex-start; align-items: center; padding:0;}
+
+      section.campus-showcase .secondary-column article {flex-direction: column; margin:0 auto;}
+      section.campus-showcase .secondary-column article .img {width: 95%; height:17em; margin:0;}
+      section.campus-showcase .secondary-column article .caption {width: 65%; line-height: 1.7em; margin:30px auto;}
+
+      section.campus-showcase .orientation{background-image: url("resources/images/information-orientation-mobile.jpg");}
+      section.campus-showcase .lecture{background-image: url("resources/images/information-guest-lecture-mobile.jpg");}
+      section.campus-showcase .campus{background-image: url("resources/images/information-campus-mobile.jpg");}
+
+      section.campus-showcase .secondary-column article .caption {width: 85%; font-size: 1.1em;}
+
+      .active{background:inherit;}
+
+}
+/********************************************
+      C O U R S E S - S H O W C A S E
+********************************************/
+section.courses-showcase {padding: 2em 0; background: #eaebec;}
+section.courses-showcase h1 {font-size: 2em; font-weight: bold; margin: 1.5em auto; text-align:center;}
+
+section.courses-showcase div.gallery {display:flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+section.courses-showcase div.gallery article,
+section.courses-showcase div.gallery article img {width:350px; height:auto;}
+section.courses-showcase div.gallery article {margin: 1em;}
+
+section.courses-showcase div.gallery article div.course-description{height:8.5em; padding: 1em; line-height: 1.5em; font-size: 1.1em; background:white;}
+section.courses-showcase div.gallery article div.course-description h5 {margin:15px 0 8px 0;}
+section.courses-showcase div.gallery article div.course-description h4 {font-size: 1.3em; font-weight: bold;}
+
+
+@media only screen and (max-width: 780px){
+  section.courses-showcase h1{margin:0 0 1em 0;}
+  section.courses-showcase{padding:2em 0;}
+  section.courses-showcase div.gallery article {margin:.5em;}
+  section.courses-showcase div.gallery article img {display:none;}
+  section.courses-showcase div.gallery article div.course-description{text-align:left; padding: 1.25em 1em; height: 2em; font-size: .9em; background:#d8d8d8;}
+  section.courses-showcase div.gallery article div.course-description h4 {font-weight: 500; margin:0; padding:0;}
+  section.courses-showcase div.gallery article div.course-description h5,
+  section.courses-showcase div.gallery article div.course-description p {display:none;}
+
+}
+
+
+/********************************************
+      E X H I B I T - S H O W C A S E
+********************************************/
+section.exhibit-showcase {font-weight: 100; background: #f3f5f5; padding:2em 0;}
+section.exhibit-showcase h2 {font-size: 1.85em; font-weight: bold; text-align: center; margin: 32px 0; }
+section.exhibit-showcase main{display:flex; justify-content: center; align-items: flex-start; margin-bottom: 30px; background: inherit; }
+
+section.exhibit-showcase section.exhibit-video{width:60%; margin:0 24px;}
+section.exhibit-showcase section.exhibit-video video{width: 100%; border: solid 2px #dbdbdb;}
+section.exhibit-showcase section.exhibit-video .video-caption h3 {font-size: 1.25em; font-weight: bold;}
+section.exhibit-showcase section.exhibit-video .video-caption {margin: 24px 0;}
+
+section.exhibit-showcase section.exhibit-stories{width: 40%;}
+section.exhibit-showcase section.exhibit-stories article{display:flex; justify-content: center; align-items: center;}
+section.exhibit-showcase section.exhibit-stories article img {width: 35%; margin: 16px;}
+section.exhibit-showcase section.exhibit-stories article .description {width: 65%; margin:auto; padding-right: 2em;}
+section.exhibit-showcase section.exhibit-stories article .description h3{font-size: 1.25em; font-weight: bold;}
+
+
+
+@media only screen and (max-width: 780px){
+      section.exhibit-showcase{padding-bottom:0;}
+      section.exhibit-showcase h2 {margin:0;}
+      section.exhibit-showcase section.exhibit-stories article,
+      section.exhibit-showcase section.exhibit-video .video-caption {display:none;}
+      section.exhibit-showcase section.exhibit-video video{border:none; margin-top:2em;}
+      section.exhibit-showcase section.exhibit-video {width: 100%; padding:0; margin:0;}
+
+      section.exhibit-showcase main{display:block; margin:0 0 30px 0; background: inherit;}
+
+}
+/********************************************
+                F O O T E R
+********************************************/
+footer{
+  background: #f3f5f5; padding: 1em 1.5em 4em 1.5em; color: #707070; border-top: solid 1px #dbdbdb;
+}
+
+@media only screen and (max-width: 780px){
+  footer{padding:1.5em 1em; font-size:.8em;}
+  footer nav {display:none;}
+}
